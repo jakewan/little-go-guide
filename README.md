@@ -5,9 +5,13 @@ This project contains information that may be useful to someone learning Go. It 
 ## Topics Covered
 
 - [Using Interfaces][] discusses the use of interfaces in Go.
+- [Writing Unit Tests][] discusses how unit tests are written in Go.
 - [Using Generics][] discusses the use of generics in Go.
 - [Project Organization][] discusses how Go projects are organized.
+- [Common Tooling][] discusses common tooling in Go projects.
 
+[common tooling]: ./common-tooling/README.md
 [project organization]: ./project-organization/README.md
 [using interfaces]: ./using-interfaces/README.md
 [using generics]: ./using-generics/README.md
+[writing unit tests]: ./writing-unit-tests/README.md
