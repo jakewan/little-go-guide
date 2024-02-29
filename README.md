@@ -1,6 +1,6 @@
 # Practical Go
 
-This project contains information that may be useful to someone learning Go. It is comprised of a set of root directories, each dedicated to a different topic. It should grow and improve over time as others contribute and I learn more.
+This project contains guidance that may be useful to someone coming to Go from another language. It is comprised of a set of root directories, each dedicated to a different topic. It should grow and improve over time as others contribute and I learn more.
 
 ## Topics Covered
 
