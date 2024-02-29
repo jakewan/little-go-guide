@@ -6,7 +6,7 @@ One feature of Go interfaces is that struct types implement them "implicitly". N
 
 Since there is no explicit declaration that a struct type implements a specific interface, people coming from Python should be pretty familiar with this pattern. It's how Go supports "duck typing".
 
-Interfaces play a significant role in testability and public API design.
+Interfaces play a significant role in testability and public API design. See [Writing Unit Tests][] and [Project Organization - Public API Design][] for more on these topics.
 
 ## Guideline: Prefer interfaces to structs in API definitions
 
@@ -15,3 +15,6 @@ TODO
 ## Guideline: Provide functions that return interfaces
 
 TODO
+
+[project organization - public api design]: ../project-organization/README.md#public-api-design
+[writing unit tests]: ../writing-unit-tests/README.md
