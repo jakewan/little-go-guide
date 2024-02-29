@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Practical Go"
+name = "Little Go Guide"
 version = "0.1.0"
 description = "Helpful guidelines for programming with Go"
 authors = ["Jacob Wan <jacobwan840@gmail.com>"]

@@ -1,5 +1,5 @@
 {
-  "name": "practical-go",
+  "name": "little-go-guide",
   "private": true,
   "scripts": {
     "format": "prettier --write .",
