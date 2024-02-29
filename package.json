@@ -1,0 +1,12 @@
+{
+  "name": "practical-go",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "markdown-lint": "markdownlint -c .github/linters/markdownlint.yml '**/*.md'"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.39.0",
+    "prettier": "^3.2.5"
+  }
+}

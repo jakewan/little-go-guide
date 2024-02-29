@@ -4,8 +4,8 @@ This project contains information that may be useful to someone learning Go. It 
 
 ## Topics Covered
 
-[Using Interfaces][] discusses the use of interfaces in Go.
-[Using Generics][] discussing the use of generics in Go.
+- [Using Interfaces][] discusses the use of interfaces in Go.
+- [Using Generics][] discussing the use of generics in Go.
 
 [using interfaces]: ./using-interfaces/README.md
 [using generics]: ./using-generics/README.md
