@@ -12,6 +12,6 @@ This project contains information that may be useful to someone learning Go. It 
 
 [common tooling]: ./common-tooling/README.md
 [project organization]: ./project-organization/README.md
-[using interfaces]: ./using-interfaces/README.md
 [using generics]: ./using-generics/README.md
+[using interfaces]: ./using-interfaces/README.md
 [writing unit tests]: ./writing-unit-tests/README.md
