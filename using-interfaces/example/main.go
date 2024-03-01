@@ -10,11 +10,14 @@ func main() {
 	var cs convenienceStore = convenienceStore{csName: "Hank's Spiff-E-Mart"}
 	displayConvenienceStoreWares(cs)
 
-	// We can reassign to cs, but it can still only be a convenienceStore.
+	// We can reassign another convenientStore to cs.
 	cs = convenienceStore{csName: "Abby's Quickstop"}
 	displayConvenienceStoreWares(cs)
 
-	// displayStoreWares takes any struct that implements the store interface.
+	// hardwareStore isn't a convenienceStore. This wouldn't compile.
+	// cs = hardwareStore{hsName: "Tammy's Tool Spot"}
+
+	// displayStoreWares accepts any struct that implements the store interface.
 	displayStoreWares(hardwareStore{hsName: "Joe's Depot"})
 	displayStoreWares(candyStore{
 		csName:       "Chocolate Dreams",
@@ -27,9 +30,6 @@ func main() {
 	// convenienceStore implements the store interface, so we can also call
 	// displayStoreWares with it.
 	displayStoreWares(cs)
-
-	// hardwareStore isn't a convenienceStore. This wouldn't compile.
-	// displayConvenienceStoreWares(hardwareStore{hsName: "Harvey's Hardware"})
 }
 
 type store interface {
@@ -42,7 +42,6 @@ type convenienceStore struct {
 	csName string
 }
 
-// typeOfStore implements store.
 func (cs convenienceStore) typeOfStore() string {
 	return "convenience store"
 }

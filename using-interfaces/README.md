@@ -8,13 +8,9 @@ Since there is no explicit declaration that a struct type implements a specific 
 
 Interfaces play a significant role in testability and public API design. See [Writing Unit Tests][] and [Project Organization - Public API Design][] for more on these topics.
 
-## Guideline: Prefer interfaces to structs in API definitions
+## Examples
 
-TODO
-
-## Guideline: Provide functions that return interfaces
-
-TODO
+The `example` subdirectory contains a small program illustrating basic interface usage.
 
 [project organization - public api design]: ../project-organization/README.md#public-api-design
 [writing unit tests]: ../writing-unit-tests/README.md
