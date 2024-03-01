@@ -1,0 +1,13 @@
+---
+extends: default
+
+ignore: |
+  node_modules/
+  .venv/
+
+rules:
+  line-length:
+    max: 88
+    level: warning
+  truthy:
+    check-keys: false
