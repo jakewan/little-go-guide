@@ -1,4 +1,5 @@
 .DEFAULT_GOAL := local-dev-all
+ROOT_DIR := $(shell pwd)
 
 .PHONY: clean-dev-env
 clean-dev-env:
@@ -9,20 +10,24 @@ clean-dev-env:
 .PHONY: go-fmt
 go-fmt:
 	@echo "Go fmt...\n"
+	$(call go_fmt,$(ROOT_DIR)/using-interfaces/example)
 
 .PHONY: go-staticcheck
 go-staticcheck:
 	@echo "Go staticcheck...\n"
 	go install honnef.co/go/tools/cmd/staticcheck@latest
 	@echo
+	$(call go_staticcheck,$(ROOT_DIR)/using-interfaces/example)
 
 .PHONY: go-test
 go-test:
 	@echo "Go test...\n"
+	$(call go_test,$(ROOT_DIR)/using-interfaces/example)
 
 .PHONY: go-vet
 go-vet:
 	@echo "Go vet...\n"
+	$(call go_vet,$(ROOT_DIR)/using-interfaces/example)
 
 .PHONY: local-dev-all
 local-dev-all: prettier-format markdown-lint yaml-lint go-fmt go-test go-vet go-staticcheck
@@ -55,7 +60,7 @@ define go_fmt
 endef
 
 define go_staticcheck
-	staticcheck -go 1.21 $(1)/...
+	staticcheck -go 1.22 $(1)/...
 	@echo
 endef
 
